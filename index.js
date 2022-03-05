@@ -25,7 +25,9 @@ function swap(i, j, arr) {
     arr[i] = arr[j];
     arr[j] = temp;
   }
-
+  function draw() {
+    background(0);
+    drawViz();
 
     
 
