@@ -20,14 +20,22 @@ function setup(){
         }
     }
 }
+
 function swap(i, j, arr) {
     let temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
   }
+  
   function draw() {
     background(0);
     drawViz();
+    
+function mousePressed() {
+        let i = floor(mouseX / w);
+        let j = floor(mouseY / h);
+        move(i, j, board);
+      }
 
     
 
